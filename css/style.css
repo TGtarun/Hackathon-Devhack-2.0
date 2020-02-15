@@ -1,0 +1,35 @@
+*{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.form-control{
+    border-radius: 0;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    -ms-border-radius: 0;
+    -o-border-radius: 0;
+}
+.btn{
+    border-radius: 0;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    -ms-border-radius: 0;
+    -o-border-radius: 0;
+    background-color: brown;
+}
+.card{
+    border: 1px solid dodgerblue;
+    width: 450px;
+    margin-top:15%;
+    margin-left:30%;
+}
+.fas{
+    color: green;
+}
+.custom-select{
+    border-radius: 0;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    -ms-border-radius: 0;
+    -o-border-radius: 0;
+}

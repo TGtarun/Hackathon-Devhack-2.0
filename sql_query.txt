@@ -1,0 +1,57 @@
+Add Company->
+create database devhack2;
+
+use devhack2;
+
+ create table company_login(
+    -> name varchar(128),
+    -> mobile varchar(128),
+    -> email varchar(128),
+    -> address varchar(128),
+    -> username varchar(128),
+    -> industryType varchar(128),
+    -> password varchar(128))ENGINE MYISAM;
+
+ create table farmer_login(
+    -> name varchar(128),
+    -> mobile varchar(128),
+    -> email varchar(128),
+    -> address varchar(128),
+    -> crop1 varchar(128),
+    -> crop2 varchar(128),
+    -> crop3 varchar(128),
+    -> username varchar(128),
+    -> password varchar(128))ENGINE MYISAM;
+
+mysql> create table farmerDoc(
+    -> crop1PrevExp varchar(128),
+    -> crop1EQHave varchar(128),
+    -> crop1EQDHave varchar(128),
+    -> crop1prevYield varchar(128),
+    -> 2EXP varchar(128),
+    -> 2Yield varchar(128),
+    -> 2EQ varchar(128),
+    -> 2DEQ varchar(128),
+    -> 3EXP varchar(128),
+    -> 3Yield varchar(128),
+    -> 3EQ varchar(128),
+    -> 3DEQ varchar(128))ENGINE MYISAM;
+
+mysql> create table farmerGroup(
+    -> memb1 varchar(128),
+    -> memb2 varchar(128),
+    -> memb3 varchar(128),
+    -> memb4 varchar(128),
+    -> memb5 varchar(128))ENGINE MYISAM;
+
+alter table farmerdoc add column 1farmSize varchar(128) after crop1prevYield;
+
+alter table farmerdoc add column 2farmSize varchar(128) after 2DEQ;
+
+ alter table farmerdoc add column 3farmSize varchar(128) after 3DEQ;
+
+  alter table farmerdoc add column username varchar(128) first;
+
+
+
+
